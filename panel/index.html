@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de control · Caja CPB</title>
+<link rel="stylesheet" href="../lib/ui.css?v=1793972486">
+<link rel="icon" href="../lib/iconos/caja.png">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../config.js?v=1793972486"></script>
+</head>
+<body>
+<nav class="topnav">
+  <span class="brand">Control de Caja CPB</span>
+  <span id="tabs" style="display:none">
+    <a href="#panel" data-v="panel">Panel de control</a><a href="#config" data-v="config">Configuración</a><a href="#puestos" data-v="puestos">Puestos</a>
+  </span>
+  <span class="sp"></span>
+  <span id="quien" style="font-size:12px;opacity:.7"></span>
+  <button id="salir" style="display:none">Salir</button>
+</nav>
+<div id="app"><p class="aviso help">Cargando…</p></div>
+<div id="modal"></div>
+<script type="module" src="panel.js?v=1793972486"></script>
+</body>
+</html>
